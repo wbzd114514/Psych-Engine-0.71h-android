@@ -52,7 +52,7 @@ class OptionsState extends MusicBeatState
 			    #if android
 				removeVirtualPad();
 				#end
-				openSubStage(new options.ExtraSettingsSubStage())
+				openSubStage(new options.ExtraSettingsSubStage());
 		}
 	}
 
