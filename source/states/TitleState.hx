@@ -85,9 +85,9 @@ class TitleState extends MusicBeatState
 		//https://github.com/beihu235/AndroidDialogs
 		var lang:String = '';
 		if (DeviceLanguage.getLang() == 'zh') 
-		lang = 'psych0.71h 安卓端口测试\nb站-北狐丶逐梦移植\n禁止上传到任何资源网站';
+		lang = 'Psych Engine 0.7.1h';
 		else
-		lang = 'psych0.71h android port test\nport by NF|beihu';
+		lang = 'Psych Engine 0.7.1h';
 		if(!checkToast){
 				
 		checkToast = true;
@@ -583,15 +583,15 @@ class TitleState extends MusicBeatState
 					FlxG.sound.music.fadeIn(4, 0, 0.7);
 				case 2:
 					#if PSYCH_WATERMARKS
-					createCoolText(['Psych Engine by'], 40);
+					createCoolText(['Psych Engine 0.7.1h by'], 40);
 					#else
 					createCoolText(['ninjamuffin99', 'phantomArcade', 'kawaisprite', 'evilsk8er']);
 					#end
 				// credTextShit.visible = true;
 				case 4:
 					#if PSYCH_WATERMARKS
-					addMoreText('Shadow Mario', 40);
-					addMoreText('Riveren', 40);
+					addMoreText('Shawdow Mario', 40);
+					addMoreText('Beihu235 Port', 40);
 					#else
 					addMoreText('present');
 					#end
