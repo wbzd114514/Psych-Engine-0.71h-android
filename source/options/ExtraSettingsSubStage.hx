@@ -13,6 +13,6 @@ class ExtraSettingsSubStage extends BaseOptionsMenu
 				       'bool'); 
 	addOption(option);
 		
-	super()
+	super();
     }
 }
