@@ -6,7 +6,7 @@ import flixel.addons.transition.FlxTransitionableState;
 
 class OptionsState extends MusicBeatState
 {
-	var options:Array<String> = ['Note Colors', 'Controls', 'Adjust Delay and Combo', 'Graphics', 'Visuals and UI', 'Gameplay'];
+	var options:Array<String> = ['Note Colors', 'Controls', 'Adjust Delay and Combo', 'Graphics', 'Visuals and UI', 'Gameplay', 'Extra Settings'];
 	private var grpOptions:FlxTypedGroup<Alphabet>;
 	private static var curSelected:Int = 0;
 	public static var menuBG:FlxSprite;
@@ -46,6 +46,11 @@ class OptionsState extends MusicBeatState
 				removeVirtualPad();
 				#end
 				MusicBeatState.switchState(new options.NoteOffsetState());
+			case 'Extra Settings':
+			    #if android
+				removeVirtualPad();
+				#end
+				openSubStage(new options.ExtraSettingsSubStage())
 		}
 	}
 
