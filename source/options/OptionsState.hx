@@ -14,8 +14,10 @@ class OptionsState extends MusicBeatState
 	
 	var tipText:FlxText;
 
-	function openSelectedSubstate(label:String) {
-		switch(label) {
+	function openSelectedSubstate(label:String) 
+	{
+		switch(label) 
+		{
 			case 'Note Colors':
 			    #if android
 				removeVirtualPad();
