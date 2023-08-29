@@ -8,7 +8,7 @@ class ExtraSettingsSubStage extends BaseOptionsMenu
 	rpcTitle = 'Extra Settings Menu'; //for Discord Rich Presence
 
 	var option:Option = new Option('strawberry', 
-				       'If checked...wait,a strawberry???/nPS:it will change the Auto Pause!', 
+				       'If checked...wait,a strawberry???\nPS:it will change the Auto Pause!', 
 				       'autoPause', 
 				       'bool'); 
 	addOption(option);
